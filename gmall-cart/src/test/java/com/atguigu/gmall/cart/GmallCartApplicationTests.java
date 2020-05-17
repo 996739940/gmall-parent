@@ -1,11 +1,10 @@
-package com.atguigu.gmall.oms;
+package com.atguigu.gmall.cart;
 
-
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GmallOmsApplicationTests {
+class GmallCartApplicationTests {
 
     @Test
     void contextLoads() {

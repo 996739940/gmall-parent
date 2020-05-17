@@ -1,6 +1,7 @@
 package com.atguigu.gmall.pms.service;
 
 import com.atguigu.gmall.pms.entity.Product;
+import com.atguigu.gmall.to.es.EsProduct;
 import com.atguigu.gmall.vo.PageInfoVo;
 import com.atguigu.gmall.vo.product.PmsProductParam;
 import com.atguigu.gmall.vo.product.PmsProductQueryParam;
@@ -37,4 +38,8 @@ public interface ProductService extends IService<Product> {
     void saveProduct(PmsProductParam productParam);
 
     void updatePublishStatus(List<Long> ids, Integer publishStatus);
+
+    EsProduct productAllInfo(Long id);
+
+    EsProduct produSkuInfo(Long id);
 }
